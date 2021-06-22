@@ -6,13 +6,20 @@ namespace Task2
     {
 
         static void Main(string[] args)
-        {
-            Console.Clear();
-            Console.WriteLine("Please choose whether you want to buy property or buy a vehicle");//User will choose here between Renting and buying a property
+        {           
 
-            Console.WriteLine("Press 1 to choose Property");//Buying Property
-            Console.WriteLine("Press 2 to choose Buying A Vehicle");//Buying a Vehicle
-            string choice = Console.ReadLine();
+            //GUI -- instead of typing a selection use a Radio Button here (XAML) put this in buying.xaml for
+//             <Grid>
+//                  <TextBlock HorizontalAlignment="Left" Margin="252,50,0,0" TextWrapping="Wrap" Text="Please choose whether you want to buy property or buy a vehicle" VerticalAlignment="Top"/>
+//                  <RadioButton x:Name="PropertyButton" Content="Property" IsChecked="True" HorizontalAlignment="Left" Margin="300,150,0,0" VerticalAlignment="Top"/>
+//                  <RadioButton x:Name="VehicleButton"  Content="Vehicle" HorizontalAlignment="Left" Margin="450,150,0,0" VerticalAlignment="Top"/>
+//                  <Button Content="Continue" HorizontalAlignment="Left" Margin="375,250,0,0" VerticalAlignment="Top" Width="75"/>
+//             </Grid>
+            Console.Clear(); //instead of the console you will be now using the window (see the other file)
+            Console.WriteLine("Please choose whether you want to buy property or buy a vehicle");//User will choose here between Renting and buying a property
+            Console.WriteLine("Press 1 to choose Property");            //Buying Property (remove and let XAML take care of this)
+            Console.WriteLine("Press 2 to choose Buying A Vehicle");    //Buying a Vehicle (remove and let XAML take care of this)
+            string choice = Console.ReadLine(); //(get the choice from the XAML button click)
 
 
             switch (choice)
